@@ -117,6 +117,7 @@ class PicoRemote {
       .setCharacteristic(Characteristic.Manufacturer, 'Lutron')
       .setCharacteristic(Characteristic.Model, `Pico Remote - ${this.type}`)
       .setCharacteristic(Characteristic.FirmwareRevision, this.version)
+      .setCharacteristic(Characteristic.SerialNumber, `PicoRemote-${this.name}`)
       .setCharacteristic(Characteristic.HardwareRevision, this.version);
   }
 
